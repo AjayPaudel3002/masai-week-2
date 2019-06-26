@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WEEK2 PROJECT</title>
+
+	<style >
+		.outer_box{
+			
+			height :800px;
+			width: 1000px;
+			margin-left: 200px;
+
+		}
+		.rec_box{
+			border: 1px solid black;
+			height:50px;
+			width: 800px;
+			margin-left: 100px;
+			margin-top: 50px;
+			background-color: black;
+			
+		}
+		.text{
+			text-align: center;
+			font-size: 20px;
+			color: white;
+			height:50px;
+			width: 800px;
+			
+		}
+		.inner_box{
+			
+			height: 500px;
+			width:800px;
+			margin-top: 50px;
+			margin-left:100px;
+		}
+		button{
+			
+			height: 50px;
+			width: 50px;
+			font-size: 15px;
+			background-color: black;
+			
+			
+		}
+		.text1{
+			color: white;
+			font-size: 20px;
+			padding-top: 20px;
+			padding-right :20px;
+			margin-left: 20px;
+
+		}
+		.button_box{
+			float: left;
+			border: 1px solid black;
+			height: 50px;
+			width: 50px;
+			margin-top: 30px;
+			margin-left: 20px;
+
+		}
+		.centre_align{
+			text-align: center;
+			padding: 20px;
+			color: white;
+		}
+		.spec_align{
+			margin-top: -40px;
+			margin-left: 10px;
+			color: white;
+		}
+
+		.clear{
+			clear: both;
+		}
+
+		.button_box2{
+			clear: both;
+			float: left;
+			border: 1px solid black;
+			height: 50px;
+			width: 50px;
+			margin-top: 30px;
+			margin-left: 50px;
+			
+			}
+
+		.button_box3{
+			clear: both;
+			float: left;
+			border: 1px solid black;
+			height: 50px;
+			width: 50px;
+			margin-top: 30px;
+			margin-left: 90px;
+
+		}
+
+		.button_box4{
+			clear: both;
+			float: left;
+			border: 1px solid black;
+			height: 50px;
+			width: 50px;
+			margin-top: 30px;
+			margin-left: 125px;
+
+		}
+
+		.space{
+			clear: both;
+			float: left;
+			border: 1px solid black;
+			height:50px;
+			width: 300px;
+			margin-left: 270px;
+			margin-top: 30px;
+			background-color: black;
+
+		}
+		.space_button{
+			height: 50px;
+			width: 300px;
+		}
+		.reverse{
+			clear: both;
+			float: left;
+			border: 1px solid black;
+			height:50px;
+			width: 100px;
+			margin-left: 350px;
+			margin-top: 30px;
+			
+		
+			
+		}
+		.reverse_button{
+			height:50px;
+			width: 100px;
+			background-color: white;
+
+		}
+		
+
+
+	</style>
+</head>
+<body>
+	<div class="outer_box">
+		<div class="rec_box">
+			<input  style="background-color: black" name="" id="input_value" class="text" type="text"  > 
+		</div>
+
+		<div class="inner_box">
+			<div class="button_box" >
+				<button onclick= "show_aphabet(1)" class="centre_align " >1
+					<p class="spec_align">!</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button  onclick= "show_aphabet(2)" class="centre_align " >2
+					<p class="spec_align">@</p>
+				</button>
+			</div>
+ 
+			<div class="button_box" >
+				<button onclick= "show_aphabet(3)" class="centre_align " >3
+					<p class="spec_align">#</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(4)" class="centre_align " >4
+					<p class="spec_align">$</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(5)" class="centre_align " >5
+					<p class="spec_align">%</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(6)" class="centre_align " >6
+					<p class="spec_align">^</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(7)" class="centre_align " >7
+					<p class="spec_align">&</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(8)" class="centre_align " >8
+					<p class="spec_align">*</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(9)" class="centre_align " >9
+					<p class="spec_align">(</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button onclick= "show_aphabet(0)" class="centre_align " >0
+					<p class="spec_align">)</p>
+				</button>
+			</div>
+
+			<div class="button_box" >
+				<button  onclick="delete_alpha()" class="centre_align " >DEL
+					<p class="spec_align"></p>
+				</button>
+			</div>
+
+
+
+
+			<div class="button_box2">
+				<button onclick ="show_aphabet('q')" class="centre_align " >Q</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('w')" class="centre_align " >W</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('e')" class="centre_align " >E</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('r')" class="centre_align " >R</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('t')" class="centre_align " >T</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('y')" class="centre_align " >Y</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('u')" class="centre_align " >U</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('i')" class="centre_align " >I</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('o')" class="centre_align " >O</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('p')" class="centre_align " >P</button>
+			</div>
+
+
+			<div class="button_box3">
+				<button onclick ="show_aphabet('a')" class="centre_align " >A</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('s')" class="centre_align " >S</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('d')" class="centre_align " >D</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('f')" class="centre_align " >F</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('g')" class="centre_align " >G</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('h')" class="centre_align " >H</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('j')" class="centre_align " >J</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick ="show_aphabet('k')" class="centre_align " >K</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('l')" class="centre_align " >L</button>
+			</div>
+
+
+
+			<div class="button_box4">
+				<button onclick="show_aphabet('z')" class="centre_align " >Z</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('x')" class="centre_align " >X</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('c')" class="centre_align " >C</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('v')" class="centre_align " >V</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('b')" class="centre_align " >B</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('n')" class="centre_align " >N</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('m')" class="centre_align " >M</button>
+			</div>
+
+			<div class="button_box">
+				<button onclick="show_aphabet('.com')" class="centre_align " style="text-align: left; padding-left: 1px" >.COM</button>
+			</div>
+
+
+			<div class="space">
+				<button onclick="space_btn(' ')" class="space_button" >Space </button>
+			</div>
+
+			<div class="reverse" >
+				<button onclick="rev()" class="reverse_button">Rev</button>
+				
+			</div>
+
+	</div>
+
+	<script >
+		function show_aphabet(num) {
+			document.getElementById('input_value').value += num
+			
+		}
+
+		function delete_alpha(){
+			var input_text = document.getElementById("input_value").value
+			var new_var = ""
+			for(i=0;i<input_text.length-1 ;i++)
+			{
+				 new_var += input_text[i]
+			}
+			document.getElementById("input_value").value = new_var
+		}
+
+		function rev()
+			{
+				var input1 = document.getElementById("input_value").value
+				var new_input1 = ""
+				
+				for(i=input1.length-1;i>=0;i--)
+				{
+					
+					new_input1 += input1[i]
+				}
+				document.getElementById("input_value").value = new_input1
+			}
+
+			function space_btn(nan){
+				var input1 = document.getElementById("input_value").value
+				var input2 = input1 + ' '
+				document.getElementById("input_value").value = input2 
+
+			}
+
+	</script>
+
+</body>
+</html>
+
+
