@@ -346,6 +346,13 @@
 				
 			</div>
 
+			<div class="reverse" >
+				<button onclick="rev()" class="reverse_button">
+					<p id="rev_value1">REV</p>
+				</button>
+				
+			</div>
+
 	</div>
 
 	<script >
@@ -364,18 +371,22 @@
 			document.getElementById("input_value").value = new_var
 		}
 
-		function rev()
-			{
-				var input1 = document.getElementById("input_value").value
-				var new_input1 = ""
-				
-				for(i=input1.length-1;i>=0;i--)
-				{
-					
-					new_input1 += input1[i]
-				}
-				document.getElementById("input_value").value = new_input1
-			}
+		function rev() {
+                var rev_color = document.getElementById("rev_value1").style.color;
+
+                if(rev_color == "black" || rev_color == ""){
+                    document.getElementById("rev_value1").style.color = "green";
+                    input = document.getElementById("input_value").value
+                    var new_input1 = ""
+                    for (i = input.length - 1; i >= 0; i--) {
+                        new_input1 += input[i]
+                    }
+                    document.getElementById("input_value").value = new_input1
+                }else{
+                    document.getElementById("rev_value1").style.color = "black";
+                    document.getElementById("input_value").value = input;
+                }
+            }
 
 			function space_btn(nan){
 				var input1 = document.getElementById("input_value").value
